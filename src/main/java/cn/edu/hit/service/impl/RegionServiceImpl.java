@@ -23,6 +23,11 @@ public class RegionServiceImpl implements RegionService {
     public void add(Region region) {
         Map<String,Object> map = ThreadLocalUtil.get();
         Integer userId = (Integer) map.get("id");
+        System.out.println(userId);
+        System.out.println(userId);
+        System.out.println(userId);
+
+
         region.setCreator(userId);
         regionMapper.add(region);
     }

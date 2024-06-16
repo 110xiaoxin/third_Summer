@@ -23,6 +23,8 @@ public class Facility {
     private LocalDateTime createTime;
     private LocalDateTime updateTime;
 
+    //如果某个校验项没有指定分组，默认属于Default分组
+    //分组之间可以继承，A extends B,则A中有B所有的校验项
     public interface Add extends Default {}
     public interface Update extends Default {}
 
